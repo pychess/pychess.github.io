@@ -1,0 +1,10 @@
+# use glob syntax.
+syntax: glob
+
+*.swp
+tmp
+*~
+
+pychess/crash.log
+pychess/tmp
+pychess/output

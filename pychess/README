@@ -1,0 +1,14 @@
+pychess site
+============
+andrew.nagi@gmail.com
+
+This site compiles with nanoc version 3.1.5
+
+# These gems are required
+gem install nanoc adsf less ruby-debug erubis therubyracer
+
+cd repo-location/hg/pychess
+nanoc compile  # To generate the site
+nanoc view     # To run WEBrick server on port 3000
+# Now point your browser to 127.0.0.1:3000 to view the site
+
