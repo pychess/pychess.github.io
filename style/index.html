@@ -1,0 +1,243 @@
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="nanoc 3.1.5">
+    <title>PyChess - </title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    
+    <script type="text/javascript">
+    /* It would be easier, but overkill, to use jquery here.
+       All we want to do - for now anyway - is to enable to hover look on the
+       home_button when the mouse is over the logo. */
+    function addClass(ele,cls) {
+    	ele.setAttribute("class", ele.getAttribute("class")+" "+cls);
+    } function removeClass(ele,cls) {
+    	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+    	ele.setAttribute("class", ele.className.replace(reg,""));
+    } function remoteHover(src, dst) {
+      src.onmouseover = (function() {addClass(dst, "hover");});
+      src.onmouseout = (function() {removeClass(dst, "hover");});
+    }
+    window.onload = (function() {
+      remoteHover(document.getElementById("logo"), document.getElementById("home_but"));
+      remoteHover(document.getElementById("pychess"), document.getElementById("home_but"));
+    });
+    </script>
+    
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-722001-3']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    
+  </head>
+  <body>
+    <div id="container">
+      
+      <!-- The slightly floating logo thingy in the upper left corner -->
+      <div id="header">
+        <a href="/" id="logo"><img src="/images/logo.png"/></a>
+        <a href="/" id="pychess" class="a"><img src="/images/pychess.png"/></a>
+      </div>
+
+      <ul id="navlist">
+        <li><a class="button" id="home_but"
+          href="/" title="To the Front Page">
+          <span>Home</span></a></li>
+        <li><a class="button"
+          href="/about" title="Everybody Loves Screenshots!">
+          <span>About & Screens</span></a></li>
+        <li><a class="button"
+          href="/download" title="Download Binaries and Sources">
+          <span>Download</span></a></li>
+        <li><a class="button"
+          href="/news" title="News Blog and Updates">
+          <span>News</span></a></li>
+        <li><a class="button" id="last_but"
+          href="/community" title="The Community">
+          <span>You & PyChess</span></a></li>
+      </ul>
+
+    
+    
+
+      <div id="content">
+        @button_text: #FFF;
+@light_red:#B80505;
+@dark_red:#6E0000;
+@content_width: 900px;
+@button_width: 120px;
+@padding: 50px;
+
+* {
+  margin: 0;
+  padding: 0;
+  color:#3D3D3D;
+	font-family:Verdana,Helvetica,Arial;
+	font-size:14px
+}
+
+h1 {
+  font-size: 22px; 
+}
+
+h3 {
+  font-size: 16px; 
+  color: @dark_red;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+  text-shadow:1px 1px 1px #666;
+}
+
+body {
+  background-color: white;
+}
+
+.top {
+	width: @content_width;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+#header {
+	.top;
+  height: 100px;
+	z-index: 10;
+	#logo {
+    border: none;
+		display: block;
+		position:relative;
+		left: 22px;
+		top: 30px;
+	}
+}
+
+
+.slice {
+  background:transparent url(/images/bar_slice.png) repeat-x;
+  float:left;
+  height:38px;
+  width:6px;
+}
+
+#navbar {
+	.top;
+  height: 23px;
+  text-align:center;
+  text-shadow:2px 2px 2px #000000;
+  top:-10px;
+
+	a {
+    color: @button_text;
+		font-size: 1.5em;
+		text-decoration: none;
+		line-height:170%;
+	}
+
+  #nav_button {
+    .slice;
+    width:@button_width;
+  }
+
+  div.selected {
+    .slice;
+    width:@button_width;
+    background:transparent url(/images/bar_slice_selected.png) repeat-x;
+  }
+
+  div.button {
+    .slice;
+    width:@button_width; 
+  }
+
+  div.button:hover {
+    .slice;
+    width:@button_width; 
+    background:transparent url(/images/bar_slice_hover.png) repeat-x;
+  }
+
+	div.bar_divider {
+    .slice;
+		#green_pawn {
+			position: relative;
+      z-index: 10;
+      left: 5px;
+      bottom: 34px;
+  	}
+		background:transparent url(/images/bar_divider.png) no-repeat;
+		width: 2px;
+	}
+
+  div.padding {
+    .slice;
+    width:@content_width - ((@button_width * 4) + 128 + (6 * 2) + (2*5));
+	}
+
+	div.left_round {
+    .slice;
+    background:transparent url(/images/bar_slice_left_round.png) no-repeat;
+	}
+
+	div.left_regular {
+    .slice;
+    background:transparent url(/images/bar_slice_left_regular.png) repeat-x;
+    width: 128px;
+	}
+
+	div.left_divider {
+    .slice;
+    background:transparent url(/images/bar_slice_left_divider.png) no-repeat;
+    width: 2px;
+	}
+
+	div.right {
+    .slice;
+		background:transparent url(/images/bar_slice_right.png) no-repeat;
+	}
+}
+
+#content{
+  background:transparent url(/images/shadow_sides.png) repeat-y;
+  clear: both;
+  display: block;
+
+
+  padding-left: @padding;
+  padding-right: @padding;
+  padding-top: 10px;
+  padding-bottom: 80px;
+  width: @content_width - 2 * @padding;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#footer{
+  background:transparent url(/images/shadow_footer.png) no-repeat;
+  clear: both;
+  display: block;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  height:59px;
+  width:@content_width;
+}
+
+      </div>
+
+      <div id="footer">
+      </div>
+
+    
+    
+    </div>
+  </body>
+</html>

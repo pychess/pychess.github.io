@@ -1,0 +1,433 @@
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="nanoc 3.1.5">
+    <title>PyChess - news</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    
+    <script type="text/javascript">
+    /* It would be easier, but overkill, to use jquery here.
+       All we want to do - for now anyway - is to enable to hover look on the
+       home_button when the mouse is over the logo. */
+    function addClass(ele,cls) {
+    	ele.setAttribute("class", ele.getAttribute("class")+" "+cls);
+    } function removeClass(ele,cls) {
+    	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+    	ele.setAttribute("class", ele.className.replace(reg,""));
+    } function remoteHover(src, dst) {
+      src.onmouseover = (function() {addClass(dst, "hover");});
+      src.onmouseout = (function() {removeClass(dst, "hover");});
+    }
+    window.onload = (function() {
+      remoteHover(document.getElementById("logo"), document.getElementById("home_but"));
+      remoteHover(document.getElementById("pychess"), document.getElementById("home_but"));
+    });
+    </script>
+    
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-722001-3']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    
+  </head>
+  <body>
+    <div id="container">
+      
+      <!-- The slightly floating logo thingy in the upper left corner -->
+      <div id="header">
+        <a href="/" id="logo"><img src="/images/logo.png"/></a>
+        <a href="/" id="pychess" class="a"><img src="/images/pychess.png"/></a>
+      </div>
+
+      <ul id="navlist">
+        <li><a class="button" id="home_but"
+          href="/" title="To the Front Page">
+          <span>Home</span></a></li>
+        <li><a class="button"
+          href="/about" title="Everybody Loves Screenshots!">
+          <span>About & Screens</span></a></li>
+        <li><a class="button"
+          href="/download" title="Download Binaries and Sources">
+          <span>Download</span></a></li>
+        <li><a class="selected"
+          href="/news" title="News Blog and Updates">
+          <span>News</span></a></li>
+        <li><a class="button" id="last_but"
+          href="/community" title="The Community">
+          <span>You & PyChess</span></a></li>
+      </ul>
+
+    
+    
+
+      <div id="content">
+        
+<h2>News</h2>
+
+<img style="float:left; display:inline-box; margin: .5em 1em 2em; 0" src="/images/pointing.png" /></br>
+<div>
+
+<h3>PyChess 1.0.0 Steinitz released</h3>
+<p>2019/05/19: PyChess Steinitz 1.0.0 released</p>
+<p>We're pleased to announce, that a new PyChess Steinitz 1.0.0 has been made available. \o/</p>
+<p>Download:
+<a href="https://github.com/pychess/pychess/releases/download/1.0.0/pychess-1.0.0.tar.gz">Tarball</a> •
+<a href="https://github.com/pychess/pychess/releases/download/1.0.0/pychess-1.0.1-1.py35.noarch.rpm">Rpm-py3.5</a> •
+<a href="https://github.com/pychess/pychess/releases/download/1.0.0/pychess-1.0.1-1.py36.noarch.rpm">Rpm-py3.6</a> •
+<a href="https://github.com/pychess/pychess/releases/download/1.0.0/pychess-1.0.1-1.py37.noarch.rpm">Rpm-py3.7</a> •
+<a href="https://github.com/pychess/pychess/releases/download/1.0.0/python3-pychess_1.0.0-1_all.deb">Python3-Deb</a> •
+<a href="https://github.com/pychess/pychess/releases/download/1.0.0/pychess-1.0.0-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.99.4 Morphy released</h3>
+<p>2018/12/09: PyChess Morphy 0.99.4 released</p>
+<p>We're pleased to announce, that a new PyChess Morphy 0.99.4 has been made available. This is the second beta of upcoming 1.0 release.</p>
+<p>Download:
+<a href="https://github.com/pychess/pychess/releases/download/0.99.4/pychess-0.99.4.tar.gz">Tarball</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.4/pychess-0.99.4-1.py34.noarch.rpm">Rpm-py3.4</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.4/pychess-0.99.4-1.py35.noarch.rpm">Rpm-py3.5</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.4/pychess-0.99.4-1.py36.noarch.rpm">Rpm-py3.6</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.4/pychess-0.99.4-1.py37.noarch.rpm">Rpm-py3.7</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.4/python3-pychess_0.99.4-1_all.deb">Python3-Deb</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.4/pychess-0.99.4-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.99.3 Morphy released</h3>
+<p>2018/09/27: PyChess Morphy 0.99.3 released</p>
+<p>We're pleased to announce, that a new PyChess Morphy 0.99.3 has been made available. This is the first beta of upcoming 1.0 release.</p>
+<p>Download:
+<a href="https://github.com/pychess/pychess/releases/download/0.99.3/pychess-0.99.3.tar.gz">Tarball</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.3/pychess-0.99.3-1.py34.noarch.rpm">Rpm-py3.4</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.3/pychess-0.99.3-1.py35.noarch.rpm">Rpm-py3.5</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.3/pychess-0.99.3-1.py36.noarch.rpm">Rpm-py3.6</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.3/pychess-0.99.3-1.py37.noarch.rpm">Rpm-py3.7</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.3/python3-pychess_0.99.3-1_all.deb">Python3-Deb</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.3/pychess-0.99.3-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.99.2 Morphy released</h3>
+<p>2018/07/08: PyChess Morphy 0.99.2 released</p>
+<p>We're pleased to announce, that a new PyChess Morphy 0.99.2 has been made available. This is the third alpha of upcoming 1.0 release.</p>
+<p><ul>
+<li>New chess variant: Placement (Bronstein/Benko/pre-chess)</li>
+<li>New learn perspective</li>
+<li>Offline FICS lectures</li>
+<li>Offline Lichess practice studies and puzzles from other sources</li>
+<li>Offline Lichess interactive lessons</li>
+<li>Endgame practice</li>
+<li>GUI enhancements and bugfixes (by ecrucru)</li>
+
+</ul></p>
+<p>Download:
+<a href="https://github.com/pychess/pychess/releases/download/0.99.2/pychess-0.99.2.tar.gz">Tarball</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.2/pychess-0.99.2-1.py34.noarch.rpm">Rpm-py3.4</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.2/PyChess-0.99.2-1.py35.noarch.rpm">Rpm-py3.5</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.2/PyChess-0.99.2-1.py36.noarch.rpm">Rpm-py3.6</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.2/python3-pychess_0.99.2-1_all.deb">Python3-Deb</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.2/pychess-0.99.2-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.99.1 Morphy released</h3>
+<p>2017/12/26: PyChess Morphy 0.99.1 released</p>
+<p>We're pleased to announce, that a new PyChess Morphy 0.99.1 has been made available. This is the second alpha of upcoming 1.0 release.</p>
+<p><ul>
+<li>New chess variant: Horde</li>
+<li>Board theme enhancements: texture, frame, grid</li>
+<li>Play Chess960 games on ICC</li>
+<li>Play with problembot/trainingbot/tacticaltrainer on ICC</li>
+<li>Countless GUI enhancements and bugfixes (by ecrucru)</li>
+
+</ul></p>
+<p>Download:
+<a href="https://github.com/pychess/pychess/releases/download/0.99.1/pychess-0.99.1.tar.gz">Tarball</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.1/pychess-0.99.1-1.py34.noarch.rpm">Rpm-py3.4</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.1/PyChess-0.99.1-1.py35.noarch.rpm">Rpm-py3.5</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.1/PyChess-0.99.1-1.py36.noarch.rpm">Rpm-py3.6</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.1/python3-pychess_0.99.1-1_all.deb">Python3-Deb</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.1/pychess-0.99.1-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.99.0 Morphy released</h3>
+<p>2017/09/12: PyChess Morphy 0.99.0 released</p>
+<p>We're pleased to announce, that a new PyChess Morphy 0.99.0 has been made available. This is the first alpha of upcoming 1.0 release.</p>
+<p><ul>
+<li>Perspectives (Welcome, Games, ICS, Database)</li>
+<li>Database opening tree based on https://github.com/gbtami/chess_db</li>
+<li>Database filtering based on https://github.com/gbtami/scoutfish</li>
+<li>Basic ICC support (seek/play/observe standard chess games)</li>
+
+</ul></p>
+<p>Download:
+<a href="https://github.com/pychess/pychess/releases/download/0.99.0/pychess-0.99.0.tar.gz">Tarball</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.0/pychess-0.99.0-1.py34.noarch.rpm">Rpm-py3.4</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.0/PyChess-0.99.0-1.py35.noarch.rpm">Rpm-py3.5</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.0/PyChess-0.99.0-1.py36.noarch.rpm">Rpm-py3.6</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.0/python3-pychess_0.99.0-1_all.deb">Python3-Deb</a> •
+<a href="https://github.com/pychess/pychess/releases/download/0.99.0/pychess-0.99.0-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12.4 Anderssen released</h3>
+<p>2016/06/25: PyChess Anderssen 0.12.4 released</p>
+<p>We're pleased to announce, that a new PyChess Anderssen 0.12.4 has been made available. It's minor feature and bugfix release.</p>
+<p><ul>
+<li>Personalize welcome pychess window</li>
+<li>Filter buttons on players/games tabs </li>
+<li>Right click menu on FICS players/games tabs</li>
+<li>Command line completion in FICS console</li>
+<li>Make showing FICS game numbers on game tabs configurable</li>
+<li>Add time to messages in console</li>
+<li>Playing a perfect endgame</li>
+
+<li>#1360 Can't type IP to FICS login dialog</li>
+<li>#1354 Segfault on second match</li>
+<li>#1353 Annotation panel broken</li>
+<li>#1352 Several FICS player rating is 0 on games tab but not 0 in tooltip</li>
+<li>#1350 DnD with more than one .pgn error</li>
+<li>#1348 "Offer rematch" button not working</li>
+<li>#1347 Small formatting issue in draw message</li>
+<li>#1346 Dialogs don't have title</li>
+<li>#1334 Regression Unable to whisper during observed game</li>
+<li>#1333 Clocks going crazy</li>
+<li>#1328 Moving in game with arrow keys doesn't work with Python3</li>
+</ul></p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12.4.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12.4-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess-0.12.4-1.py34.noarch.rpm">Rpm-py3.4</a> • <a href="http://www.pychess.org/download/pychess-0.12.4-1.py35.noarch.rpm">Rpm-py3.5</a> • <a href="http://www.pychess.org/download/pychess_0.12.4-1_all.deb">Python2-Deb</a> • <a href="http://www.pychess.org/download/python3-pychess_0.12.4-1_all.deb">Python3-Deb</a> • <a href="http://www.pychess.org/download/pychess-0.12.4-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12.3 Anderssen released</h3>
+<p>2016/02/25: PyChess Anderssen 0.12.3 released</p>
+<p>We're pleased to announce, that a new PyChess Anderssen 0.12.3 has been made available. It's minor bugfix only release.</p>
+<p><ul>
+<li>#1158 Analyzer evaluation visible when playing online</li>
+<li>#1161 Endgame table not working on move before promotion</li>
+<li>#1168 Black options in the opening book</li>
+<li>#1180 Sometimes the computer move is not shown on the board</li>
+<li>#1182 New Channels added are not persistent across sessions</li>
+<li>#1186 Command password being captured in log file</li>
+<li>#1235 Name missing from observer list</li>
+<li>#1277 Not initialized default values on pychess very first run</li>
+<li>#1314 pychess-0.12.2 can not load fen files</li>
+<li>#1320 Select and open multiple .fen files simultaneously</li>
+<li>#1321 Start Setup Position menu with current game shown position</li>
+</ul></p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12.3.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12.3-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess-0.12.3-1.py34.noarch.rpm">Rpm-py3.4</a> • <a href="http://www.pychess.org/download/pychess_0.12.3-1_all.deb">Python2-Deb</a> • <a href="http://www.pychess.org/download/python3-pychess_0.12.3-1_all.deb">Python3-Deb</a> • <a href="http://www.pychess.org/download/pychess-0.12.3-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12.2 Anderssen released</h3>
+<p>2016/01/31: PyChess Anderssen 0.12.2 released</p>
+<p>We're pleased to announce, that a new PyChess Anderssen 0.12.2 has been made available. It's mainly a bugfix release, but some new features was implemented too.</p>
+<p><ul>
+<li>Right click menu on FICS seek tab with accept,assess,archive items</li>
+<li>FICS stored/history/journal games on archive tab</li>
+<li>Basic FICS examine support</li>
+<li>Cleanup of FICS console output</li>
+<li>Auto promote to queen option in preferences</li>
+<li>Show FICS observers on game chat panel</li>
+<li>Ability to whisper in side panel chat windows using #</li>
+<li>Grouped players on FICS chat window</li>
+<li>Visual reflection of session changes with respect to FICS observed games and chat channels</li>
+<li>Sphinx based docs on http://pychess.readthedocs.org</li>
+</ul></p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12.2.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12.2-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess-0.12.2-1.py34.noarch.rpm">Rpm-py3.4</a> • <a href="http://www.pychess.org/download/pychess_0.12.2-1_all.deb">Python2-Deb</a> • <a href="http://www.pychess.org/download/python3-pychess_0.12.2-1_all.deb">Python3-Deb</a> • <a href="http://www.pychess.org/download/pychess-0.12.2-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12.1 Anderssen released</h3>
+<p>2015/12/07: PyChess Anderssen 0.12.1 released</p>
+<p>We're pleased to announce, that a new PyChess Anderssen 0.12.1 has been made available. It's mainly a bugfix release, but some new features was implemented too.</p>
+<p><ul>
+<li>Makruk and Metaltops piece sets (by Peter Thomson)</li>
+<li>Setup board colors (by Peter Thomson)</li>
+<li>Setup position</li>
+<li>Support to observe lecturebot on FICS</li>
+<li>Support to interact with puzzlebot and endgamebot on FICS</li>
+</ul></p>
+<p>Thanks for Peter for hes great contributions!</p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12.1.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12.1-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess-0.12.1-1.py34.noarch.rpm">Rpm-py3.4</a> • <a href="http://www.pychess.org/download/pychess_0.12.1-1_all.deb">Python2-Deb</a> • <a href="http://www.pychess.org/download/python3-pychess_0.12.1-1_all.deb">Python3-Deb</a> • <a href="http://www.pychess.org/download/pychess-0.12.1-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12 Anderssen released</h3>
+<p>2015/10/23: Nearly 4 years after latest stable PyChess Staunton 0.10.1 was released, PyChess Anderssen 0.12 is now out! Thx to everyone who helped to move PyChess forward!</p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess-0.12-1.py34.noarch.rpm">Rpm-py3.4</a> • <a href="http://www.pychess.org/download/pychess_0.12-1_all.deb">Python2-Deb</a> • <a href="http://www.pychess.org/download/python3-pychess_0.12-1_all.deb">Python3-Deb</a> • <a href="http://www.pychess.org/download/pychess-0.12.0-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12 Anderssen rc5 released</h3>
+<p>2015/09/17: PyChess Anderssen 0.12 rc5 is out. A couple of bugs was fixed from rc4. PyChess Windows now has an all in one installer. Big thanks to Boris Boutkov and Massimiliano Leoni for intensive testing and help in fixing bugs!</p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12rc5.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12rc5-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess-0.12rc5-1.py34.noarch.rpm">Rpm-py3.4</a> • <a href="http://www.pychess.org/download/pychess_0.12rc5-1_all.deb">Python2-Deb</a> • <a href="http://www.pychess.org/download/python3-pychess_0.12rc5-1_all.deb">Python3-Deb</a> • <a href="http://www.pychess.org/download/pychess-0.12-win32.msi">Win32-msi</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12 Anderssen rc4 released</h3>
+<p>2015/08/16: We're pleased to announce, that a new PyChess Anderssen 0.12 rc4 has been made available. In most cases rc4 should contain only final fixes, but after rc3 we faced that fixing random crashes and freezees is nearly impossible. (It was caused by using old/deprecated way of pygtk threading.) So we decided to rewrite all our code in the supported way. At the same time we started to port PyChess to Python3 and John Cheetham started to port PyChess to Gtk3 too. After merging these branches it opened the way to support Windows (the old/deprecated threading mode was never supported on Windows). Finally with the help of Leonardo Gregianin PyChess now has experimental Windows support! (No installer yet.)</p>
+<p>
+<p>Some other new variant support was implemented too:</p>
+<p><ul>
+<li>ASEAN, Makruk(Thai), OukChatrang(Cambodian), Sittuyin(Burmese)</li>
+<li>King of the hill</li>
+<li>Three check</li>
+</ul></p>
+<p>Other minor enhancements:</p>
+<p><ul>
+<li>Adding Windows engines on Linux</li>
+<li>Auto save games</li>
+<li>Auto adding engines if they ship .eng files</li>
+<li>Copy PGN to clipboard</li>
+</ul></p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12rc4.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12rc4-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess-0.12rc4-1.py34.noarch.rpm">Rpm-py3.4</a> • <a href="http://www.pychess.org/download/pychess_0.12rc4-1_all.deb">Python2-Deb</a> • <a href="http://www.pychess.org/download/python3-pychess_0.12rc4-1_all.deb">Python3-Deb</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12 Anderssen rc3 released</h3>
+<p>2014/11/09: We're pleased to announce, that a new PyChess Anderssen 0.12 rc3 has been made available. It's mainly a bugfix release, but two minor new features was implemented.</p>
+<p>A new "Invalid move" sound</p>
+<p>A new "Short on time" sound with settable activation time</p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12rc3.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12rc3-1.py26.noarch.rpm">Rpm-py2.6</a> • <a href="http://www.pychess.org/download/pychess-0.12rc3-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess_0.12rc3-1_all.deb">Deb</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12 Anderssen rc2 released</h3>
+<p>2014/8/23: We're pleased to announce, that a new PyChess Anderssen 0.12 rc2 has been made available. It's a bugfix only release, except one minor feature, a new "Send all seeks" button was added to FICS Seeks/Challenges tab.</p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12rc2.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12rc2-1.py26.noarch.rpm">Rpm-py2.6</a> • <a href="http://www.pychess.org/download/pychess-0.12rc2-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess_0.12rc2-1_all.deb">Deb</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12 Anderssen rc1 released</h3>
+<p>We're pleased to announce, that a new PyChess Anderssen 0.12 rc1 has been made available. It's mainly a bugfix release, but two new features was implemented.</p>
+<p>If Hint mode is active, Colorize analyzed moves option let you show blunder moves in red on Annotation panel.</p>
+<p>A new Analyze game menu, adding engine scores to moves and variations on blunders</p>
+<p>Download: <a href="http://www.pychess.org/download/pychess-0.12rc1.tar.gz">Tarball</a> • <a href="http://www.pychess.org/download/pychess-0.12rc1-1.py26.noarch.rpm">Rpm-py2.6</a> • <a href="http://www.pychess.org/download/pychess-0.12rc1-1.py27.noarch.rpm">Rpm-py2.7</a> • <a href="http://www.pychess.org/download/pychess_0.12rc1-1_all.deb">Deb</a>
+</p><p> - The PyChess Team</p>
+
+<h3>PyChess 0.12 Anderssen beta4 released</h3>
+<p>Here comes a new beta! Unfortunately we have some critical bugs, so no RC yet. On the other side, PyChess now supports all FICS variants (except bughouse). So besides several random variants, you can play atomic, crazyhouse, losers, suicide and wildcastle on FICS or even against PyChess itself.</p>
+<p>Download: <a href="http://pychess.googlecode.com/files/pychess-0.12beta4.tar.gz">Tarball</a> • <a href="http://pychess.googlecode.com/files/pychess-0.12beta4-1.noarch.rpm">Rpm</a> • <a href="http://pychess.googlecode.com/files/pychess_0.12beta4-1_all.deb">Deb</a>
+</p><p>Cheers!</p>
+
+<h3>PyChess 0.12 Anderssen beta3 released</h3>
+<p>We're pleased to announce, that a new PyChess Anderssen 0.12 beta3 has been made available. It's mainly a bugfix release, containing countless of FICS related fixes.</p>
+<p>Download: <a href="http://pychess.googlecode.com/files/pychess-0.12beta3.tar.gz">Tarball</a> • <a href="http://pychess.googlecode.com/files/pychess-0.12beta3-1.noarch.rpm">Rpm</a> • <a href="http://pychess.googlecode.com/files/pychess_0.12beta3-1_all.deb">Deb</a>
+</p><p>The PyChess Team</p>
+
+<h3>PyChess 0.12 Anderssen beta2 released</h3>
+<p>We're pleased to announce, that a new PyChess Anderssen 0.12 beta2 has been made available. It's mainly a bugfix release, but some new features was implemented too.</p>
+<p><ul>
+<li>FICS premove (by Daniel Malmer). Finally (one) true premove is supported now in PyChess.</li>
+<li>Edit game. It enables playing and analyzing variations after game finished.</li>
+<li>FICS console. It's rather simple, but basic stuff works now.</li>
+</ul></p>
+<p>Thanks for Daniel for hes great contribution!</p>
+<p>Download: <a href="http://pychess.googlecode.com/files/pychess-0.12beta2.tar.gz">Tarball</a> • <a href="http://pychess.googlecode.com/files/pychess-0.12beta2-1.i686.rpm">i686 Rpm</a> • <a href="http://pychess.googlecode.com/files/pychess-0.12beta2-1.x86_64.rpm">x86_64 Rpm</a> • <a href="http://pychess.googlecode.com/files/pychess_0.12beta2-1_all.deb">Deb</a>
+</p><p>The PyChess Team</p>
+
+<h3>PyChess 0.12 Anderssen beta1 released</h3>
+<p>We're pleased to announce, that a new PyChess Anderssen 0.12 beta1 has been made available. Lots of bugs fixed and some cool new features was implemented.</p>
+<p><ul>
+<li>New engine output sidepanel.</li>
+<li>New hint panel showing opening book moves, engine analyzing lines and egtb lookup results.</li>
+<li>New preferences tab for hint panel.</li>
+<li>New piece set theme tab in preferences menu.</li>
+<li>New engines dialog to add/delete engines and edit engine options.</li>
+<li>New export position menu to save current position into .png file.</li>
+<li>New show captured pieces option in preferences.</li>
+<li>New crazyhouse variant support.</li>
+<li>And finally the outstanding 'pychess scrambled all FICS variables' bug was fixed.</li>
+</ul></p>
+<p>Translators update your translations on <a href="https://www.transifex.net/projects/p/pychess/">https://www.transifex.net/projects/p/pychess/</a> please!</p>
+<p>Download: <a href="http://pychess.googlecode.com/files/pychess-0.12beta1.tar.gz">Tarball</a> • <a href="http://pychess.googlecode.com/files/pychess-0.12beta1-1.noarch.rpm">Rpm</a> • <a href="http://pychess.googlecode.com/files/pychess_0.12beta1-1_all.deb">Deb</a>
+</p><p>The PyChess Team</p>
+
+<h3>PyChess Staunton 0.10.1 final released</h3>
+<p>I'm pleased to announce, that a new PyChess Staunton 0.10.1 final has been made available.</p>
+<p>Issues fixed from beta2:</br>
+#118, support blindfold chess variants</br>
+#496, load positions from FEN</br>
+#376, freeze upon clicking 'Show Chat' button</p>
+<p>Happy New Year!</br>
+Tamás</p>
+
+
+<h3>PyChess 0.10.1beta2 released</h3>
+<p>We're pleased to announce, that a new PyChess Staunton 0.10.1 beta2 has been made available.</p>
+<p>A couple of issues was fixed from beta1 release. (http://code.google.com/p/pychess/source/list)
+Translators, update your translations on <a href="https://translations.launchpad.net/pychess">https://translations.launchpad.net/pychess</a> please!</p>
+<p>Best,<br/>
+The PyChess Team</p>
+
+<h3>PyChess 0.10.1beta1 released</h3>
+<p>We're pleased to announce, that a new PyChess Staunton 0.10.1 beta1 has been made available.</p>
+<p>Lots of bugs fixed and the new annotation sidepanel was implemented.
+The FICS dialog was enhanced too and now it's more complete then ever.
+Translators, update your translations on <a href="https://translations.launchpad.net/pychess">https://translations.launchpad.net/pychess</a> please!</p>
+<p>Best,<br/>
+The PyChess Team</p>
+
+<h3>PyChess is the 7th most used FICS interface!</h3>
+<p>
+Topping popular interfaces such as EBoard and XBoard, BabasChess today shows,
+that 874 registred FICS users used PyChess for their last log on.
+<pre>
+fics% t babaschess stats
+:Statistics over 34607 registered user logins recorded in the last 30 days (in case of more logins of the same
+user, only the last one is considered)
+:BabasChess: 15133 (43.73%)
+:Jin Applet: 7069 (20.43%)
+:Jin: 2914 (8.42%)
+:WinBoard: 2005 (5.79%)
+:Odesys Chess: 1931 (5.58%)
+:Unspecified: 1267 (3.66%)
+:Other: 1126 (3.25%)
+:Thief: 965 (2.79%)
+:EBoard: 815 (2.36%)
+:XBoard: 338 (0.98%)
+:CClient: 255 (0.74%)
+:Raptor: 220 (0.64%)
+:iNemesis: 217 (0.63%)
+:Arena: 122 (0.35%)
+</pre>
+<p>While PyChess is still hidden within "Other" in the listed statistics, a direct query shows the total numbers:</p>
+<pre>
+fics% t babaschess usageinfo pychess
+:A) Total users recorded: 109960
+:B) Users using pychess at last logon: 874 (0.79%)
+:C) Users logged on at least once with pychess: 1301 (1.18% of total users)
+</pre>
+<p>This is great news, and we thank our great users for spreading the love, and our developers for bringing us ever better and more stable PyChess releases!</p>
+<p>The BabasChess stats bot does however also show, that some distributions are very slow at delivering the latest releases to their users. This is something we notice a lot on the issue tracker, but we haven't had too much of an idea of the actual numbers.</p>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"chartType":"PieChart","chartName":"Chart 1","dataSourceUrl":"//spreadsheets.google.com/tq?key=0AukVtjwxZXcydFpaODJnWmVWR2ZYUVN6Tmg0andCOXc&transpose=0&headers=0&range=A2%3AB10&gid=0&pub=1","options":{"fontColor":"#fff","midColor":"#36c","pointSize":"0","headerColor":"#3d85c6","headerHeight":40,"is3D":true,"hAxis":{"maxAlternation":1},"wmode":"opaque","title":"PyChess User Fragmentation","mapType":"hybrid","isStacked":false,"showTip":true,"displayAnnotations":true,"nonGeoMapColors":["#660000","#990000","#cc0000","#e06666","#ea9999","#f4cccc","#274e13","#38761d","#6aa84f","#316395"],"dataMode":"markers","colors":["#660000","#990000","#cc0000","#e06666","#ea9999","#f4cccc","#274e13","#38761d","#6aa84f","#316395"],"smoothLine":false,"maxColor":"#222","lineWidth":"2","labelPosition":"right","fontSize":"14px","hasLabelsColumn":true,"maxDepth":2,"legend":"right","allowCollapse":true,"minColor":"#ccc","width":600,"height":371},"refreshInterval":5} </script>
+<p>If you know anyone still running on PyChess 0.10beta1, hurry out there and help them. Before it is too late.</p>
+<h3>Staunton 0.10 Final!</h3>
+<p>This release of PyChess has been on the way for more than two years.
+We have had a lot of last minute fixes since the release candidate.
+A few of them for bugs that have been around a long time.
+In particular there has been a lot of stabilization of CECP and UCI,
+so they should now work with an even wider set of engines.
+You can even run windows engines through wine.</p>
+<p>Read the whole announcement <a href="https://groups.google.com/forum/#!topic/pychess-people/gOa4oqUUULE">on the mailing list</a>.</p>
+
+<h3>PyChess has a new website!</h3>
+<p>After a lot of great work from the community, in particular Andrew Nagi and Matthew Gatto, we can now pressent the new <a href="http://pychess.org">PyChess.org</a>!</a> We would also like to thank Alexis Flint for the domain.</p>
+<p>More news should follow shortly, regarding the upcomming PyChess Stauton release.</p>
+
+<h3>Staunton 0.10 RC 1</h3>
+<p>
+2010/10/15: This is the only planned release candidate before 0.10 final. Lots of bugs fixed and the new seek dialog is more polished now. Please update your translations on <a href="https://translations.launchpad.net/pychess">Launchpad</a>!</p>
+<p>Download: <a href="http://pychess.googlecode.com/files/pychess-0.10rc1.tar.gz">Tarball</a> • <a href="http://pychess.googlecode.com/files/pychess-0.10rc1-1.noarch.rpm">Rpm</a> • <a href="http://pychess.googlecode.com/files/pychess_0.10rc1-1_all.deb">Deb</a>
+</p>
+
+<h3>Old news</h3>
+<p>
+You have reached the end of our news list. For news older than 2011, check <a href="http://sites.google.com/site/pychess/">the archive</a>.
+</p>
+
+</div>
+
+      </div>
+
+    
+    
+    </div>
+  </body>
+</html>

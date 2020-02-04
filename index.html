@@ -1,0 +1,90 @@
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="nanoc 3.1.5">
+    <title>PyChess - home</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    
+    <script type="text/javascript">
+    /* It would be easier, but overkill, to use jquery here.
+       All we want to do - for now anyway - is to enable to hover look on the
+       home_button when the mouse is over the logo. */
+    function addClass(ele,cls) {
+    	ele.setAttribute("class", ele.getAttribute("class")+" "+cls);
+    } function removeClass(ele,cls) {
+    	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+    	ele.setAttribute("class", ele.className.replace(reg,""));
+    } function remoteHover(src, dst) {
+      src.onmouseover = (function() {addClass(dst, "hover");});
+      src.onmouseout = (function() {removeClass(dst, "hover");});
+    }
+    window.onload = (function() {
+      remoteHover(document.getElementById("logo"), document.getElementById("home_but"));
+      remoteHover(document.getElementById("pychess"), document.getElementById("home_but"));
+    });
+    </script>
+    
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-722001-3']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    
+  </head>
+  <body>
+    <div id="container">
+      
+      <!-- The slightly floating logo thingy in the upper left corner -->
+      <div id="header">
+        <a href="/" id="logo"><img src="/images/logo.png"/></a>
+        <a href="/" id="pychess" class="a"><img src="/images/pychess.png"/></a>
+      </div>
+
+      <ul id="navlist">
+        <li><a class="selected" id="home_but"
+          href="/" title="To the Front Page">
+          <span>Home</span></a></li>
+        <li><a class="button"
+          href="/about" title="Everybody Loves Screenshots!">
+          <span>About & Screens</span></a></li>
+        <li><a class="button"
+          href="/download" title="Download Binaries and Sources">
+          <span>Download</span></a></li>
+        <li><a class="button"
+          href="/news" title="News Blog and Updates">
+          <span>News</span></a></li>
+        <li><a class="button" id="last_but"
+          href="/community" title="The Community">
+          <span>You & PyChess</span></a></li>
+      </ul>
+
+    
+    
+
+      <div id="fp_top">
+        <h1>PyChess <span class="keyword">Anderssen</span><br/>
+            plays chess better than <span class="keyword">you</span>*</h1>
+      </div>
+
+      <div id="fp_middle">
+          <a href="/about" id="fp_col_1"><span>Have a Peek</span><!--<img id="peek_box" src="/images/peek_box.png"/>--></a>
+          <a href="/download" id="fp_col_2"><span>PyChess - Free Download</span></a>
+      </div>
+
+      <div id="fp_bottom">
+        <h3 style="text-align: right;">*Or it will find someone who does</h3>
+      </div>
+
+    
+    
+    </div>
+  </body>
+</html>

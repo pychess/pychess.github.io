@@ -1,0 +1,137 @@
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="nanoc 3.1.5">
+    <title>PyChess - Get Involved</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    
+    <script type="text/javascript">
+    /* It would be easier, but overkill, to use jquery here.
+       All we want to do - for now anyway - is to enable to hover look on the
+       home_button when the mouse is over the logo. */
+    function addClass(ele,cls) {
+    	ele.setAttribute("class", ele.getAttribute("class")+" "+cls);
+    } function removeClass(ele,cls) {
+    	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+    	ele.setAttribute("class", ele.className.replace(reg,""));
+    } function remoteHover(src, dst) {
+      src.onmouseover = (function() {addClass(dst, "hover");});
+      src.onmouseout = (function() {removeClass(dst, "hover");});
+    }
+    window.onload = (function() {
+      remoteHover(document.getElementById("logo"), document.getElementById("home_but"));
+      remoteHover(document.getElementById("pychess"), document.getElementById("home_but"));
+    });
+    </script>
+    
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-722001-3']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    
+  </head>
+  <body>
+    <div id="container">
+      
+      <!-- The slightly floating logo thingy in the upper left corner -->
+      <div id="header">
+        <a href="/" id="logo"><img src="/images/logo.png"/></a>
+        <a href="/" id="pychess" class="a"><img src="/images/pychess.png"/></a>
+      </div>
+
+      <ul id="navlist">
+        <li><a class="button" id="home_but"
+          href="/" title="To the Front Page">
+          <span>Home</span></a></li>
+        <li><a class="button"
+          href="/about" title="Everybody Loves Screenshots!">
+          <span>About & Screens</span></a></li>
+        <li><a class="button"
+          href="/download" title="Download Binaries and Sources">
+          <span>Download</span></a></li>
+        <li><a class="button"
+          href="/news" title="News Blog and Updates">
+          <span>News</span></a></li>
+        <li><a class="selected" id="last_but"
+          href="/community" title="The Community">
+          <span>You & PyChess</span></a></li>
+      </ul>
+
+    
+    
+
+      <div id="content">
+        <h2>Get Involved</h2>
+<div class="columnbox">
+<p>PyChess is a fun group of people interested in chess and making it accessible to people. If you are like what we do, there is sure to be a way you can contribute, however little time you may have.</p>
+<p>Join the <a href="http://groups.google.com/group/pychess-people">pychess-people mailing list</a> and <code>#pychess</code> on freenode and see what's going on.</p>
+
+<h3/>Contributing to the project</h3>
+
+<p>Browse through the opportunities below and feel free to ask if you have any questions. If you would like to do something else out of the box - super duper.</p>
+
+<ul class="image_list">
+    <li>
+        <img src="/images/chat.png" alt=""/>
+        <h4>Helping Users</h4>
+        <p>Interested in helping others get the most out of PyChess and Chess? We rely on enthusiastic contributors like you to support and guide them. Hang out on the <a href="http://groups.google.com/group/pychess-people" title="">mailing list</a>, online <a href="http://webchat.freenode.net/?channels=pychess&uio=d4">IRC chat</a> or the <a href="https://github.com/pychess/pychess/issues" title="">Issue tracker</a> and see if anybody asks for help.</p>
+    </li>
+    <li style="clear:both">
+        <img src="/images/comments.png" alt="" style="float:left"/>
+        <h4>Testing and Quality Assurance</h4>
+        <p>Quality Assurance is a great way to get familiar with PyChess and our code. Help us on the exciting hunt for bugs, that terrorise the life of people we care about.</p>
+    </li>
+    <li style="clear:both">
+        <img src="/images/book.png" alt="" style="float:left"/>
+        <h4>Coding</h4>
+        <p>Many people start hacking on PyChess simply to practise their Python or Gtk skills. Other start because they are interested in chess engines, databases, Internet chess protocols and more. You can find all the developers on the <a href="http://groups.google.com/group/pychess-people" title="">mailing list</a>, and also make sure to check out the <a href="#more_coding">More coding section</a> below.</p>
+    </li>
+    <li style="clear:both">
+        <img src="/images/moves.png" alt="" style="float:left"/>
+        <h4>Localization</h4>
+        <p>Get involved with PyChess by making it available in your language. <a href="https://github.com/pychess/pychess/wiki/TransifexTranslates" title="">The process is easy</a> and a fun way to practise your language skills. </p>
+    </li>
+    <li style="clear:both">
+        <img src="/images/score.png" alt="" style="float:left"/>
+        <h4>Marketing and Evangelism</h4>
+        <p>A lot of people are still struggling to find a usable chess client. Help us spread the word of PyChess and increase its momentum further.</p>
+    </li>
+    <li style="clear:both">
+    <div>
+        <img src="/images/design.png" alt="" style="float:left"/>
+        <h4>Visual Design</h4>
+        <p>So you have great artistic skill, but how about letting thousands of users experience that every day? We believe that a well designed user experience makes the world a happier place.</p></div>
+    </li>
+</ul>
+
+<h3><a name="more_coding">More about coding</a></h3>
+<p>PyChess has come a long way since it started in 2006, and is today one of the most advanced chess clients for Linux. But our ambitions know no end, and we have a lot more stuff lined up. To get there, we need your help.</p>
+<p>Reaching this point, you have hopefully already secured yourself <a href="https://github.com/pychess/pychess">a copy of the source code</a>. After all it is just there for you to take and play with. As a first project, you could modify the <a href="https://github.com/pychess/pychess/blob/master/utilities/arena.py">arena.py script</a> to test the different difficulty levels of PyChess against each other; Or you could write a small gtk-viewer that shows a fen chess board.&emsp;Enjoy!</p>
+<p>PyChess has a very open development structure. If you want to hack on a specific task in which you are interested, just do it. Of course we'll have to discuss the integration, and you can hopefully get valuable feedback and hints from your fellow developers, but don't hold yourself back.</p>
+<p>If you'd like inspiration on projects to take on, check out the <a href="https://github.com/pychess/pychess/labels/Easy-Fix">Easy-Fix</a> label on the tracker. It holds tasks that can be solved without too much prior knowledge of the code.</a>
+
+<h3>Documentation</h3>
+
+<p>Documentation is gold, but we aren't rich. There does exist a pydoc of the API and a big UML of the 0.6 class structure. It probably won't be worth your time though.</p>
+<p>The best advice is to have a good look around in the module you are interested in, which should work more or less independently. Also a few scripts in the <code><a href="https://github.com/pychess/pychess/wiki/PyChessUtilities">utilities/</a></code> do a good job showing the engine API.</p>
+<p>Once you figure out how a badly documented piece of code works, remember to add a few new lines there or on the wiki, so to help the next person with the same problem you had. (It may be yourself).</p>
+<p>And of course, ask on mailing list, chat up your fellow developers, ask, ask, ask :)</p>
+
+</div>
+
+      </div>
+
+    
+    
+    </div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="nanoc 3.1.5">
+    <title>PyChess - Features</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    
+    <script type="text/javascript">
+    /* It would be easier, but overkill, to use jquery here.
+       All we want to do - for now anyway - is to enable to hover look on the
+       home_button when the mouse is over the logo. */
+    function addClass(ele,cls) {
+    	ele.setAttribute("class", ele.getAttribute("class")+" "+cls);
+    } function removeClass(ele,cls) {
+    	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+    	ele.setAttribute("class", ele.className.replace(reg,""));
+    } function remoteHover(src, dst) {
+      src.onmouseover = (function() {addClass(dst, "hover");});
+      src.onmouseout = (function() {removeClass(dst, "hover");});
+    }
+    window.onload = (function() {
+      remoteHover(document.getElementById("logo"), document.getElementById("home_but"));
+      remoteHover(document.getElementById("pychess"), document.getElementById("home_but"));
+    });
+    </script>
+    
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-722001-3']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    
+  </head>
+  <body>
+    <div id="container">
+      
+      <!-- The slightly floating logo thingy in the upper left corner -->
+      <div id="header">
+        <a href="/" id="logo"><img src="/images/logo.png"/></a>
+        <a href="/" id="pychess" class="a"><img src="/images/pychess.png"/></a>
+      </div>
+
+      <ul id="navlist">
+        <li><a class="button" id="home_but"
+          href="/" title="To the Front Page">
+          <span>Home</span></a></li>
+        <li><a class="selected"
+          href="/about" title="Everybody Loves Screenshots!">
+          <span>About & Screens</span></a></li>
+        <li><a class="button"
+          href="/download" title="Download Binaries and Sources">
+          <span>Download</span></a></li>
+        <li><a class="button"
+          href="/news" title="News Blog and Updates">
+          <span>News</span></a></li>
+        <li><a class="button" id="last_but"
+          href="/community" title="The Community">
+          <span>You & PyChess</span></a></li>
+      </ul>
+
+    
+    
+
+      <div id="content">
+        <h2>About PyChess</h2>
+<div class="columnbox" style="margin-bottom:2em">
+<p>PyChess is a gtk chess client, originally developed for GNOME, but running well under all other linux desktops. (Which we know of, at least). PyChess is 100% python code, from the top of the UI to the bottom of the chess engine, and all code is licensed under the GNU Public License.</p>
+<p>The goal of PyChess is to provide an advanced chess client for linux following the GNOME Human Interface Guidelines. The client should be usable to those new to chess, who just want to play a short game and get back to their work, as well as those who wants to use the computer to further enhance their play.</p>
+</div class="columnbox">
+
+<div id="feature1" class="feature">
+    <img alt="Screenshot showing a human vs. computer game in PyChess with a preferences dialog showing a list of detected chess engines" src="/images/feature-1.png" class="flush_left"/>
+    <h3>Use Any Chess Engine</h3>
+    <p>With PyChess it is easy to play a game against the computer or use the computer to help you find the best move during a game with the Hint Mode feature.</p><p>PyChess comes with its own built-in chess engine and will automatically detect and work with most popular chess engines as long as they're installed on your computer. This includes engines such as GnuChess, Crafty, Sjeng and Fruit, and even Windows engines like Rybka.</p>
+<p>In the case PyChess doesn't automatically detect an engine you've installed, you can manually add and configure it engines menu. See <a href="https://github.com/pychess/pychess/wiki/ChessEngines">the wiki</a> for additional engines.</p>
+</div>
+
+<div id="feature2" class="feature">
+    <img alt="Screenshot showing the FICS Internet Chess Lounge with an Edit Seek dialog and an Internet Chess Chat window" src="/images/feature-2.png" class="flush_right"/>
+    <h3>Play Online on FICS/ICC</h3>
+    <p>When you get sick of playing computer players you can login to <a href="http://www.freechess.org/">FICS</a> or <a href="https://www.chessclub.com/">ICC </a>and play against people all over the world. You can also observe other games being played, create up to three custom seek profiles, browse other players on-line and view their profiles, login and resume an unfinished game after being disconnected, play any supported chess variant, and chat with your opponent and anyone else online.</p><p>PyChess also has a built-in Timeseal client, so you won't lose clock time during a game due to lag. While PyChess doesn't have full "pre-move" support yet, you can select or start dragging a piece before your opponent has made their move.</p>
+</div>
+
+<div id="feature3" class="feature">
+    <img alt="Screenshot showing the PyChess - Welcome screen along with a New Game dialog" src="/images/feature-3.png" class="flush_left"/>
+    <h3>Clean, Elegant, Easy To Use Interface</h3>
+    <p>The goal of PyChess is to be usable both to those new to chess who just want to play a quick game, as well as those who want to use the computer to further enhance their chess skills. Wherever possible, PyChess follows the GNOME Human Interface Guidelines and tries to present the fewest possible options to the user such that they can configure PyChess to behave the way they want it to, while at the same time not being distracted with unnecessary options.</p>
+</div>
+
+<div id="features" class="feature_list">
+    <h3>Features</h3>
+    <ul class="columnbox">
+    <li>UCI and CECP chess engine support and playable at 8 different difficulty levels, and a built-in python chess engine</li>
+    <li>On-line play on FICS with built-in FICS Timeseal support</li>
+    <li>On-line play on ICC with timestamp support</li>
+    <li>Resizable chess board, "pre-drag" support, move and capture sounds and animations</li>
+    <li>Reads and writes PGN, EPD and FEN chess file formats; using the open dialog you can preview and open any position of any game contained in a PGN file and choose the player to play either side</li>
+    <li>Undo, pause and resume games</li>
+    <li>Chess variants: Atomic, Crazyhouse, Fischer Random/Chess 960, Losers, Suicide, Random and Asymmetric Random, Shuffle, Corner, Upside Down, Pawns Pushed/Passed, Pawn/Knight/Rook/Queen Odds, ASEAN, Makruk, Ouk Chatrang, Sittuyin, King of the hill, 3 check, Horde, Placement
+    <li>Built-in opening book and Hint Mode arrows (the Hint arrow shows the best move according to whatever chess engine the user has chosen as the analysis engine in the Preferences)</li>
+    <li>Complies with the <a href="http://library.gnome.org/devel/hig-book/stable/">GNOME Human Interface Guidelines</a></li>
+    </ul>
+</div>
+
+
+      </div>
+
+    
+    
+    </div>
+  </body>
+</html>
